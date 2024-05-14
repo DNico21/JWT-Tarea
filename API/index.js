@@ -57,18 +57,6 @@ app.post("/login",(req,res)=>{
         res.status(400).send("Credenciales incorrectas o incompletas.");
     }
 });
-app.get("/",(req,res)=>{
-    const HtmlResponse=`
-    <html>
-        <head>
-
-        <head>
-        <body>
-            <h1> :) </h1>
-        </body>
-    </html>
-    `;
-})
 //endpoint /profile
 app.get("/profile",verificarToken,(req,res)=>{
     const datos = {
