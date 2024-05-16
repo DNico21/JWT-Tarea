@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 8000;
 const cookieParser = require('cookie-parser');
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Ey ojito, Bienvenido ;)');
+});
+
 app.use(express.json());
 app.use(cookieParser());
 app.use('/login', login);
