@@ -1,4 +1,4 @@
-//app.js
+//index.js
 const express = require('express');
 const login = require('./routes/login');
 const profile = require('./routes/profile');
